@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto de venta ESTADIO</title>
+    <link rel="stylesheet" href="styles.css">
+ </head>
+<body>
+<!--Se ponen a la venta, las entradas para un partido de futbol internacional, cuyo precio depende de la tribuna, así: tribuna norte y sur cuesta 25 nuevos soles, tribuna oriente cuesta 45 nuevos soles y tribuna occidente cuesta 65 nuevos soles. Diseñe usted, la solución que controle la venta de dichas entradas a fin de poder saber la cantidad de personas que asisten a cada tribuna, la cantidad total de personas (Asistencia) y el monto total recaudado por la venta de todas las entradas. (Recaudación).
+ -->
+ <div class="main">
+    <h1 class="h1">Punto de venta</h1>
+
+    <form action="" class="miForm" id="miForm" onsubmit="verCompra(event)">
+        <label for="nombre">Nombre de cliente</label>
+        <input type="text" name="" id="nombre">
+        <br><br>
+        <label for="zona">Selecciona la zona</label>
+        <select name="zona" id="zona">
+            <option value="0">Seleccione</option>
+            <option value="1" id="norte">Norte</option>
+            <option value="2" id="sur">Sur</option>
+            <option value="3" id="oriente">Oriente</option>
+            <option value="4" id="occidente">Occidente</option>
+        </select>
+        <br><br>
+        <label for="cantidad">Cantidad de personas</label>
+        <input type="number" class="cantidad" name="cantidad" id="cantidad">
+        <button type="button" onclick="anadir()">Añadir</button>
+
+        <br><br>
+        <button onsubmit="verCompra(event)">COMPRAR</button>
+         <div class="item" id="item"></div>
+    </form>
+</div>
+
+<script src="js.js"></script>
+</body>
+</html>
